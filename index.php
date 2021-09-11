@@ -25,7 +25,7 @@
                     <img class="produto-image" src="">
                     <br><br>
                     <p class="lista-preco text-danger">Lista de Preços: <s></s></p>
-                    <button type="button" class="btn btn-success" onclick="datailsModal"></button>
+                    <button type="button" class="btn btn-success" onclick="detalhesModal()">Detalhes</button>
                 </div>
             </div>
         </div>
