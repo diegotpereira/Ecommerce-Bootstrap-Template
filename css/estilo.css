@@ -1,0 +1,37 @@
+img.produto-image {
+    width: auto;
+    height: 200px;
+}
+
+.livro-titulo {
+    font-size: 1, 2em;
+}
+
+.livro-autor {
+    font-size: 1em;
+    color: gray;
+}
+
+img.modal-image {
+    width: auto;
+    height: 400px;
+}
+
+.livro-box {
+    margin-bottom: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #010101;
+    height: 80px;
+    width: 1800px;
+    position: relative;
+    z-index: 999;
+    margin-left: auto;
+    /* linha modificada */
+    margin-right: auto;
+    /* linha adicionada */
+    text-align: center;
+    color: white;
+}
