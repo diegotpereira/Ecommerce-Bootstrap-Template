@@ -29,7 +29,7 @@
 
    function adicionarCarrinho(id) {
 
-       $('#modal_errors"').html('');
+       $('#modal_errors').html('');
 
        var quantidade = $("#quantidade").val();
        var available=$('#available').val();
@@ -44,7 +44,7 @@
 
        }else if (quantidade > available) {
            error+='<p class="alert alert-danger">Quantity greater than available</p>';
-           $("#modal_errors").html(error);
+           $('#modal_errors').html(error);
            return;
        }else{
            $.ajax({
