@@ -24,7 +24,7 @@
                         <hr>
                         <p>Lista de Preços: <s class="text-danger"></s></p>
                         <p>Seus Preços: </p>
-                        <form action="adicionarCarrinho.php" method="POST" id="produto_form">
+                        <form action="addCarrinho.php" method="POST" id="produto_form">
                             <div class="form-group col-md-3">
                                 <input type="hidden" name="produto_id" value="">
                                 <input type="hidden" name="available" value="">
@@ -39,7 +39,7 @@
         </div>
         <div class="modal-footer">
             <button class="btn btn-default" onclick="modalFechar()">Fechar</button>
-            <button class="btn btn-warning" onclick="adicionarCarrinho()"><span class="fa fa-shopping-cart"></span>Adicionar no Carrinho</button>
+            <button class="btn btn-warning" onclick="adicionarCarrinho(); return false;"><span class="fa fa-shopping-cart"></span>Adicionar no Carrinho</button>
             </div>
         </div>
     </div>

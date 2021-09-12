@@ -29,11 +29,19 @@
 
    function adicionarCarrinho() {
        $("#modal_errors").html('');
-       var data=$('#produto_form').serialize();
+
        var quantidade = $("#quantidade").val();
+       var error= '';
+       var data=$('#produto_form').serialize();
+
        if (quantidade === '') {
+
+           error+='<p class="alert alert-danger">Please choose quantity</p>';
            return;
+
        }else if (quantidade > available) {
+           error+='<p class="alert alert-danger">Quantity greater than available</p>';
+           $("#modal_errors").html(error);
            return;
        }else{
            $.ajax({
