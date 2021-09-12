@@ -27,16 +27,19 @@
        });
    }
 
-   function adicionarCarrinho() {
-       $("#modal_errors").html('');
+   function adicionarCarrinho(id) {
+
+       $('#modal_errors"').html('');
 
        var quantidade = $("#quantidade").val();
+       var available=$('#available').val();
        var error= '';
        var data=$('#produto_form').serialize();
 
        if (quantidade === '') {
 
            error+='<p class="alert alert-danger">Please choose quantity</p>';
+           $('#modal_errors').html(error);
            return;
 
        }else if (quantidade > available) {

@@ -9,7 +9,6 @@
 
                 </a>
                 <div class="dreopdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#"></a>
                 </div>
             </li>
             <li class="navbar-item"><a class="nav-link" href="carrinho.php"><span class="fa fa-shopping-cart"></span>Meu Carrinho</a></li>
