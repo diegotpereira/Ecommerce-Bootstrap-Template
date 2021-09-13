@@ -6,5 +6,6 @@
    if (mysqli_connect_errno()) {
        # code...
        echo "A conexão com o banco de dados falhou devido aos seguintes erros: " .mysqli_connect_error();
+       die();
    }
 ?>
